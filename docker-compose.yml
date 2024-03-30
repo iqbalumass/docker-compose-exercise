@@ -1,0 +1,9 @@
+# Docker Compose file version
+version: '3'
+services:
+  web:
+    build: ./web
+    ports:
+    - "3000:3000" # Map host port 3000 to container port 3000
+  db:
+    build: ./db
